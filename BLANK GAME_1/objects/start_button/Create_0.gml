@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+button_text = "start";
+
 activate_button = function() 
 
 {

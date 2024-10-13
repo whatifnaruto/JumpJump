@@ -4,7 +4,7 @@ hovering = false;
 
 clicked = false;
 
-button_text = "Hello world!";
+button_text = "blank";
 
 
 activate_button = function() 
