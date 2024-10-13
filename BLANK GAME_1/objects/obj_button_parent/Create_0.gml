@@ -6,6 +6,8 @@ clicked = false;
 
 button_text = "blank";
 
+font = fnt_button
+
 
 activate_button = function() 
 
