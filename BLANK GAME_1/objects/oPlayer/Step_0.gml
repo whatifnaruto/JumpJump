@@ -2,26 +2,30 @@
 // You can write your codein this editor
 
 ysp += gravStr
+maxSpd = grounded ? moveSpd : airSpd;
+if (grounded == false) xsp *= drag;
+
 
 if keyboard_check(vk_left) // Moving
 {
-	if (xsp > -moveSpd) xsp -= acc;
+	if (xsp > -maxSpd) xsp -= acc;
     // xsp = -moveSpd
 	// sprite_assign(0, player_move)
 } else if keyboard_check(vk_right)
 {
-	if (xsp < moveSpd) xsp += acc;
+	if (xsp < maxSpd) xsp += acc;
     //xsp = +moveSpd
 	// sprite_assign(0, player_move)
 } else // Idling
 {
 	// sprite_assign(0, player_idle);
-	xsp *= gravStr
+	if (grounded == true) xsp *= 1.0 - slowSpd;
+	else xsp *= 1.0 - gravStr;
 }
 
 if place_meeting(x, y-1, oSolid)
 {
-	ysp = gravStr;
+	if (ysp < 0) ysp = gravStr;
 }
 
 if place_meeting(x-1, y, oSolid) || place_meeting(x+1, y, oSolid)
@@ -32,10 +36,12 @@ if place_meeting(x-1, y, oSolid) || place_meeting(x+1, y, oSolid)
 if place_meeting(x, y+1, oSolid)
 {
 	ysp = 0;
+	grounded = true;
 
 	if keyboard_check(vk_up)
 	{
 		ysp = -jumpHeight
+		grounded = false;
 	}
 }
 

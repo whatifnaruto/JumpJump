@@ -6,5 +6,10 @@ ysp = 0;
 
 jumpHeight = 3;
 moveSpd = 2;
+airSpd = 3;
 gravStr = 0.1;
+drag = 0.999;
+slowSpd = 0.13;
 acc = 0.1;
+
+grounded = false;
