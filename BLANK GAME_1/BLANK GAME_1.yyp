@@ -70,6 +70,7 @@
     {"id":{"name":"mainScreen","path":"sprites/mainScreen/mainScreen.yy",},},
     {"id":{"name":"player_fall","path":"sprites/player_fall/player_fall.yy",},},
     {"id":{"name":"player_idle","path":"sprites/player_idle/player_idle.yy",},},
+    {"id":{"name":"player_jump","path":"sprites/player_jump/player_jump.yy",},},
     {"id":{"name":"player_move","path":"sprites/player_move/player_move.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
