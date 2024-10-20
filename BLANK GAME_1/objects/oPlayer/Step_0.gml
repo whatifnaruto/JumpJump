@@ -23,12 +23,12 @@ if keyboard_check(vk_left) // Moving
 	}
 	else 
 	{
-		frameSprite = fall_sprite;
+		frameSprite = jump_sprite;
 		xsp *= 1.0 - gravStr;
 	}
 }
 
-if (grounded == false && ysp > 0) frameSprite = jump_sprite;
+if (grounded == false && ysp > 0) frameSprite = fall_sprite;
 sprite_index = frameSprite;
 
 if place_meeting(x, y-1, oSolid)

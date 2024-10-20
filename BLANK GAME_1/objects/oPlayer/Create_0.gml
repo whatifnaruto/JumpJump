@@ -16,5 +16,5 @@ grounded = false;
 
 move_sprite = player_move;
 idle_sprite = player_idle;
-fall_sprite = player_jump;
+fall_sprite = player_fall;
 jump_sprite = player_jump;

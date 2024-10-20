@@ -34,6 +34,9 @@
     "name":"player_idle",
     "path":"sprites/player_idle/player_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Sprite5",
+    "path":"sprites/Sprite5/Sprite5.yy",
+  },
   "visible":true,
 }
