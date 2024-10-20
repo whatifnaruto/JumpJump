@@ -68,7 +68,10 @@ if place_meeting(x,y, oFlag)
 
 if place_meeting(x,y, oSpike)
 {
-	room_restart()
+	instance_create_layer(floor(x), floor(y), "Instances", oBlood)
+	//room_restart()
+	x = x_start;
+	y = y_start;
 }
 
 

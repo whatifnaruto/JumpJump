@@ -4,6 +4,9 @@ window_set_size(1280, 720);
 xsp = 0;
 ysp = 0;
 
+x_start = x;
+y_start = y;
+
 jumpHeight = 3;
 moveSpd = 2;
 airSpd = 3;
