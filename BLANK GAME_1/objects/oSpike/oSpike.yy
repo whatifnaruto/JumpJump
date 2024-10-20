@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite3",
-    "path":"sprites/Sprite3/Sprite3.yy",
+    "name":"spr_spikes",
+    "path":"sprites/spr_spikes/spr_spikes.yy",
   },
   "spriteMaskId":null,
   "visible":true,
