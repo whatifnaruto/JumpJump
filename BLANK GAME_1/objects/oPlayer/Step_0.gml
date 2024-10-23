@@ -46,16 +46,17 @@ if place_meeting(x, y+1, oSolid)
 	ysp = 0;
 	grounded = true;
 
-	if keyboard_check(vk_up)
+	if keyboard_check(vk_up) // Jump
 	{
 		ysp = -jumpHeight
 		grounded = false;
+		audio_play_sound(snd_jump, 0, false);
 	}
 }
 
 move_and_collide(xsp, ysp, oSolid)
 
-if place_meeting(x,y, oFlag)
+if place_meeting(x,y, oFlag) // Level end
 {
 	if (room_next(room) != -1)
 		room_goto_next()
@@ -66,12 +67,13 @@ if place_meeting(x,y, oFlag)
 	}
 }
 
-if place_meeting(x,y, oSpike)
+if place_meeting(x,y, oSpike) // Death spikes
 {
 	instance_create_layer(floor(x), floor(y), "Instances", oBlood)
 	//room_restart()
 	x = x_start;
 	y = y_start;
+	audio_play_sound(snd_die, 0, false);
 }
 
 
